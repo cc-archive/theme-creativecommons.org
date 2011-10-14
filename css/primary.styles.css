@@ -364,6 +364,53 @@ a.menu:after, .dropdown-toggle:after {
   border-top: none;
 }
 
+#top-banner {
+  position: relative;
+  margin: 0 0 0;
+  padding: 7px 14px;
+  background-color: #FFF542;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#FFF542), to(#FAED00));
+  background-image: -moz-linear-gradient(top, #FFF542, #FAED00);
+  background-image: -ms-linear-gradient(top, #FFF542, #FAED00);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF542), color-stop(100%, #FAED00));
+  background-image: -webkit-linear-gradient(top, #FFF542, #FAED00);
+  background-image: -o-linear-gradient(top, #FFF542, #FAED00);
+  background-image: linear-gradient(top, #FFF542, #FAED00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF542', endColorstr='#FAED00', GradientType=0);
+  border: 1px solid #ddd;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /*-webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;*/
+}
+
+#top-banner:hover {
+  background-position: 0 -1000px;
+}
+
+#top-banner h4 {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#top-banner .omega {
+	text-align: right;
+}
+
+#top-banner #donate-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
 .help-popover {
 	position: relative;
 	display: none;
@@ -448,6 +495,14 @@ a.menu:after, .dropdown-toggle:after {
 	bottom: 20px;
 }
 
+.casestudies td:first-child { 
+	vertical-align: middle; 
+}
+
+.casestudies td:first-child img { 
+	display: block; 
+	margin: auto; 
+}
 
 footer, footer p, footer p small {
 	color: #ffffff;

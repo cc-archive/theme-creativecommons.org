@@ -81,8 +81,8 @@
 				    	<a href="https://creativecommons.net/donate/" class="dropdown-toggle">Support CC</a>
 				    	<ul class="menu-dropdown">
 				    		<li><a href="https://creativecommons.net/donate/">Donate to Creative Commons</a></li>
+						<li><a href="https://creativecommons.net/store/">Buy CC Merchandise</a></li>
 						    <li class="divider"></li>
-				    		<li><a href="https://creativecommons.net/store/">Buy CC Merchandise</a></li>
 				    		<li><a href="https://creativecommons.net/supporters/">Our Supporters</a></li>
 						<li><a href="https://creativecommons.net/testimonials/">Testimonials</a></li>
 				    		<li><a href="https://creativecommons.net/corporate/">Corporate Giving</a></li>
@@ -128,3 +128,4 @@
 			</div>
 		</div>
 		</header>
+	<?php include 'banner-donate.php'; ?>
