@@ -11,15 +11,7 @@ $(document).ready(function(){
   // Dropdown for topbar nav
   // ===============================
 
-  $("body").bind("click", function (e) {
-    $('.dropdown-toggle, .menu').parent("li").removeClass("open");
-  });
-
-  $(".dropdown-toggle, .menu").click(function (e) {
-    $('.dropdown-toggle, .menu').not(this).parent("li").removeClass("open");
-    var $li = $(this).parent('li').toggleClass('open');
-    return false;
-  });
+  $('.topbar').dropdown();
   
   // Help popovers
   // ===============================
@@ -89,7 +81,7 @@ $(document).ready(function(){
 		play: 15000,
 		pause: 15000,
 		effect: 'fade',
-		fadeSpeed: 0,
+		fadeSpeed: 0
 	});
   });
 
@@ -115,3 +107,7 @@ $(document).ready(function(){
 });
 
 $(window).load( $('div.carousel').css('display', 'block') );
+
+if (navigator.userAgent.match(/MSIE\s(?!9.0)/)) {
+	$(window).load( $('div.carousel').css('display', 'none') );
+}
