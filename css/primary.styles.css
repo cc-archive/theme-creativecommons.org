@@ -27,6 +27,7 @@ html, body {
 	padding-bottom: 300px;
 }
 
+#fixfooter,
 footer {
 	position: absolute;
 	bottom: 0;
@@ -182,6 +183,7 @@ h6, h6 small {
 	top:0;
 	left: 0;
 	z-index: 1;
+    cursor: pointer;
 }
 
 .topbar #home-link {
@@ -223,7 +225,7 @@ a.menu:after, .dropdown-toggle:after {
 .topbar form {
 	float: right;
   	max-width: 220px;
-  	width: 20%;
+  	width: 19%;
   	margin-right: 10px;
 }
 
@@ -547,10 +549,12 @@ footer #colophon {
 	overflow: visible;
 	top: 10px;
 	left: 0px;
-	width: 393px;
+    /* width: 940px 
+	width: 393px; */
+    width: 100%;
 	height: 250px;
 	background: url("../img/Peters_projection_blank.png") no-repeat 0 0; /* https://secure.wikimedia.org/wikipedia/commons/wiki/File:Peters_projection,_blank.svg */
-	opacity:0.75; filter:alpha(opacity=75);
+	/*opacity:0.75; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; filter:alpha(opacity=75);*/
 }
 
 .carousel {
@@ -610,6 +614,17 @@ footer #colophon {
 	border-top:1px solid #000;
 	text-shadow:none;
 }
+
+
+
+.carousel #slides .prev,
+.carousel #slides .next {
+        display: none;
+        visibility: hidden;
+}
+
+
+
 
 .bucket .frames {
 	position: absolute;
@@ -757,3 +772,27 @@ p.presskit {
         margin-left: 0.4em;
 }
 
+
+/** people pages **/
+
+div.list { width: 30%; float: left; } 
+div.list ul { margin-top: 0.175em !important; line-height:1.5em;} 
+p.org { border-top:1px solid #DDDDDD; margin-right:20px; padding-top:10px; }  
+div.person { padding: 0 0 40px 0; } 
+div.person img { padding: 0 20px 20px 0; } 
+
+
+.wp-pagenavi {
+    padding-bottom: 20px;
+}
+
+select, input[type=file] {
+    height: auto;
+}
+
+input,
+textarea,
+select,
+.uneditable-input { 
+    height: auto;
+}

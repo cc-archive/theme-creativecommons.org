@@ -29,7 +29,9 @@ j(document).ready(function(){
 
   j(function(){
     j("#slides").slides({
-		generateNextPrev: false,
+		generateNextPrev: true,
+		next: 'next',
+		previous: 'prev',
 		pagination: true,
 		paginationClass: 'frames',
 		preload: false,
@@ -103,8 +105,9 @@ j(document).ready(function(){
 
 });
 
-j(window).load( j('div.carousel').css('display', 'block') );
 
-if (navigator.userAgent.match(/MSIE\s(?!9.0)/)) {
-	j(window).load( j('div.carousel').css('display', 'none') );
+if (navigator.userAgent.match(/MSIE\s(?!8.0)/)) {
+	// j(window).load( j('div.carousel').css('display', 'none') );
+} else {
+    j(window).load( j('div.carousel').css('display', 'block') );
 }

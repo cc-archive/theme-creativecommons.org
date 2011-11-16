@@ -150,4 +150,37 @@ function cc_get_attachment_image($id, $width) {
 function get_http_security () {
     echo 'http';
 }
+
+/**
+ * Are we on a main version of the cc website?
+ */
+function is_cc_main_site () {
+    if ( $_SERVER["HTTP_HOST"] == 'cc.localhost' ||
+         $_SERVER["HTTP_HOST"] == 'cc.fabricatorz.com' ||
+         $_SERVER["HTTP_HOST"] == 'creativecommons.org' ||
+         $_SERVER["HTTP_HOST"] == 'staging.creativecommons.org' )
+    {
+        return true;
+    }
+    return false;
+}
+
+/** 
+ * Is this IE 8 or less
+ * 
+ * Needs browscap to work:
+ * * http://www.php.net/manual/en/function.get-browser.php
+ * * See README for more info
+ */
+function is_not_old_ie () 
+{
+    $browser = get_browser(null, true);
+    if ( empty($browser) || 
+        ! ( preg_match('/IE/i', $browser[parent]) && $browser[majorver] <= 8 ) )
+    {
+        return true;
+    }
+    else
+        return false;
+}
 ?>
