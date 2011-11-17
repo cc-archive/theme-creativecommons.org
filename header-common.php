@@ -6,7 +6,7 @@
 	<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('stylesheet_directory'); ?>/apple-touch-icon-precomposed.png">
 
     <?php 
-    if ( is_not_old_ie() )
+    if(! preg_match('/MSIE [1-8]/i', $_SERVER['HTTP_USER_AGENT']))
     {
     ?>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css">
