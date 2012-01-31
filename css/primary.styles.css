@@ -8,6 +8,7 @@
 
 html, body {
 	height: 100%;
+	color: #000000;
 }
 
 ::-moz-selection { background: #627D0F; color: #fff; text-shadow: none; }
@@ -811,4 +812,9 @@ select,
 /* Override the #bfbfbf from bootstrap CSS file */
 p small {
 	color: #222222;
+}
+
+/* Override default color for <li> tesxt in bootstrap CSS file */
+li {
+	color: #000000;
 }
