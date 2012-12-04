@@ -2,7 +2,7 @@
 		<div class="topbar">
 			<div class="topbar-inner">
 				<div class="container">
-				<a id="skip-navigation" href="#start-content" title="Skip Navigation">Skip Navigation</a>
+				<a id="skip-navigation" href="#main" title="Skip Navigation">Skip Navigation</a>
 				<a href="<?php bloginfo('home')?>" title="Home"><span id="home-link">Home</span><span id="home-button"></span></a>
 				<div id="logo"><span>Creative Commons</span></div>
 					<ul id="short-menu" class="nav">
@@ -37,6 +37,9 @@
 						    <li class="divider"></li>
 						    <li><a href="http://wiki.creativecommons.org/FAQ">Frequently Asked Questions</a></li>
 						    <li><a href="http://creativecommons.org/contact">Contact Us</a></li>
+						    <li class="divider"></li>
+						    <li><a href="https://creativecommons.net/store/">Buy CC Merchandise</a></li>
+				    		    <li><a href="https://creativecommons.net/supporters/">Our Supporters</a></li>
 						    
 				      </ul>
 				    </li>
@@ -77,7 +80,7 @@
 				    </li>
 				    
 				    <li class="dropdown">
-				    	<a href="https://creativecommons.net/donate/" class="dropdown-toggle">Support CC</a>
+				    	<a href="https://creativecommons.net/donate/" class="OFF_FOR_CAMPAIGNdropdown-toggle">Donate to CC</a>
 				    	<ul class="menu-dropdown">
 				    		<li><a href="https://creativecommons.net/donate/">Donate to Creative Commons</a></li>
 						    <li><a href="https://creativecommons.net/store/">Buy CC Merchandise</a></li>
@@ -128,4 +131,5 @@
 				</div>
 			</div>
 		</div>
+<?php include 'banner-cc10.php'; ?>
 		</header>
